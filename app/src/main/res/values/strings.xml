@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Memtrig Admin</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string-array name="time">
+        <item>5 Min</item>
+        <item>10 Min</item>
+        <item>15 Min</item>
+    </string-array>
+</resources>

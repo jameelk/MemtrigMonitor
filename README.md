@@ -1,2 +1,2 @@
-# MemtrigMonitor
+# Memtrig monitor app
  
