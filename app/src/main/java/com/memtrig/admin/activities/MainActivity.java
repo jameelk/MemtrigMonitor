@@ -109,8 +109,8 @@ public class MainActivity extends AppCompatActivity
             fab.hide();
         } else if (id == R.id.nav_notes) {
             openFragment(new NoteFragment());
-        } else if (id == R.id.nav_logout) {
             fab.show();
+        } else if (id == R.id.nav_logout) {
             new AlertDialog.Builder(MainActivity.this)
                     .setTitle("Logout")
                     .setMessage("Are you sure you want to logout?")

@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.memtrig.admin">
 
+
     <application
         android:name=".globals.App"
         android:allowBackup="true"
@@ -14,6 +15,10 @@
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".activities.MainActivity"
             android:screenOrientation="portrait">
+            <meta-data android:name="google_analytics_adid_collection_enabled" android:value="false" />
+            <meta-data android:name="firebase_analytics_collection_deactivated" android:value="true" />
+
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

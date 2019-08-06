@@ -177,6 +177,7 @@ public class NoteFragment extends Fragment {
                 }
                 if (titleText != null && !titleText.trim().isEmpty() && descriptionText != null &&
                         !descriptionText.trim().isEmpty()) {
+                    alertDialog.dismiss();
                     Note note = new Note();
                     note.setTitle(titleText);
                     note.setDescription(descriptionText);
@@ -187,7 +188,6 @@ public class NoteFragment extends Fragment {
                             @Override
                             public void onSuccess(Void aVoid) {
                                 Snackbar.make(getView(), "Success", Snackbar.LENGTH_SHORT).show();
-                                alertDialog.dismiss();
                             }
                         });
                     } else {
@@ -196,7 +196,6 @@ public class NoteFragment extends Fragment {
                             @Override
                             public void onSuccess(Void aVoid) {
                                 Snackbar.make(getView(), "Success", Snackbar.LENGTH_SHORT).show();
-                                alertDialog.dismiss();
                             }
                         });
                     }
